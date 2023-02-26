@@ -53,6 +53,7 @@ nav {
 .header-title {
 	padding-top: 178px;
 	width: 550px;
+	z-index: 1;
 }
 header {
 	background-image: url(/img/background-img.svg);
@@ -61,11 +62,18 @@ header {
 	width: 100%;
 	height: 574px;
 }
+.header-shadow {
+	position: absolute;
+	width: 100%;
+	height: 574px;
+	background: rgba(0, 0, 0, 0.15);
+}
 .header-subtitle {
 	padding-top: 62px;
 	padding-bottom: 42px;
 	font-size: var(--font-size);
 	font-weight: var(--font-weight);
+	z-index: 1;
 }
 .btn-offer {
 	width: 164px;
@@ -76,8 +84,83 @@ header {
 	background-color: transparent;
 	border: 2px white solid;
 	transition: 1s ease-in-out;
+	z-index: 1;
 }
 .btn-offer:hover {
 	background-color: white;
 	color: var(--font-color-second);
+}
+/* main  */
+.first-article {
+	width: 960px;
+	margin: 0 auto;
+}
+.first-container__title {
+	font-size: var(--font-size-second);
+	font-weight: var(--font-weight);
+	color: #152d41;
+	padding-top: 51px;
+}
+.first-container__text {
+	font-size: var(--font-size);
+}
+.bold-text {
+	font-weight: var(--font-weight);
+}
+.img-circle:nth-child(odd) {
+	display: flex;
+	align-items: right;
+}
+.first-container__img {
+	background-image: url(img/pracownik-1.png);
+	background-position: top;
+	background-size: cover;
+	width: 197px;
+	height: 197px;
+	border-radius: 50%;
+}
+.second-img {
+	background-image: url(img/pracownik-2.jpg);
+	background-position: top;
+	background-size: cover;
+	width: 197px;
+	height: 197px;
+	border-radius: 50%;
+}
+.first-container__title {
+	padding-top: 51px;
+	padding-bottom: 76px;
+}
+.first-container__text {
+	padding-top: 104px;
+	padding-bottom: 104px;
+}
+/* second article */
+
+/* footer  */
+footer {
+	display: flex;
+	text-align: left;
+	width: 100%;
+	height: 71px;
+	background-color: var(--background-color);
+}
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 960px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: var(--font-color);
+}
+.footer__icon {
+	font-size: 31px;
+}
+.footer__copyright {
+	color: var(--font-color);
+	font-size: var(--font-size);
+	font-weight: var(--font-weight);
 }
